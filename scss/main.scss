@@ -1,0 +1,7 @@
+@import './config';
+
+body {
+  background: $background-gradient;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  height: 100vh;
+}
