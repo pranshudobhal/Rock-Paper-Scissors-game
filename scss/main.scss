@@ -1,7 +1,18 @@
 @import './config';
+@import './header';
 
 body {
   background: $background-gradient;
   font-family: 'Barlow Semi Condensed', sans-serif;
   height: 100vh;
+}
+
+header {
+  display: flex;
+  border: 2px solid $white;
+  border-radius: 5px;
+  width: 80vw;
+  margin: 0 auto;
+  padding: 10px;
+  // color: $white;
 }

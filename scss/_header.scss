@@ -1,0 +1,24 @@
+.heading {
+  flex: 1 1 auto;
+  width: 50%;
+  height: auto;
+  &__title {
+    word-spacing: 100vw;
+    font-weight: map-get($font-weights, bold);
+  }
+}
+
+.score {
+  flex: 1 1 auto;
+  height: auto;
+  background-color: $white;
+  border-radius: 5px;
+
+  &__heading {
+    color: $score-text;
+  }
+
+  &__total {
+    color: $dark-text;
+  }
+}
