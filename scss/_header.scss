@@ -3,6 +3,8 @@
   width: 50%;
   height: auto;
   &__title {
+    font-size: 1.25rem;
+    color: $white;
     word-spacing: 100vw;
     font-weight: map-get($font-weights, bold);
   }
@@ -13,9 +15,11 @@
   height: auto;
   background-color: $white;
   border-radius: 5px;
+  text-align: center;
 
   &__heading {
     color: $score-text;
+    // height: ;
   }
 
   &__total {
