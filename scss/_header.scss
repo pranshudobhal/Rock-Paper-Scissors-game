@@ -3,7 +3,7 @@ header {
   border: 2px solid $header-outline;
   border-radius: 5px;
   width: 80vw;
-  margin: 0 auto;
+  margin: 1.5rem auto;
   padding: 10px;
 }
 
@@ -16,6 +16,8 @@ header {
     color: $white;
     word-spacing: 100vw;
     font-weight: map-get($font-weights, bold);
+    padding: 0.5rem;
+    line-height: 0.8;
   }
 }
 
@@ -28,10 +30,16 @@ header {
 
   &__heading {
     color: $score-text;
-    // height: ;
+    height: 30%;
+    font-size: 0.75rem;
+    font-weight: map-get($font-weights, semi-bold);
+    padding-top: 0.5rem;
   }
 
   &__total {
     color: $dark-text;
+    height: 70%;
+    font-size: 2.5rem;
+    font-weight: map-get($font-weights, bold);
   }
 }

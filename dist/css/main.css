@@ -20,7 +20,7 @@ header {
   border: 2px solid #606e85;
   border-radius: 5px;
   width: 80vw;
-  margin: 0 auto;
+  margin: 1.5rem auto;
   padding: 10px;
 }
 
@@ -37,6 +37,8 @@ header {
   color: #fff;
   word-spacing: 100vw;
   font-weight: 700;
+  padding: 0.5rem;
+  line-height: 0.8;
 }
 
 .score {
@@ -51,9 +53,16 @@ header {
 
 .score__heading {
   color: #2a46c0;
+  height: 30%;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding-top: 0.5rem;
 }
 
 .score__total {
   color: #3b4363;
+  height: 70%;
+  font-size: 2.5rem;
+  font-weight: 700;
 }
 /*# sourceMappingURL=main.css.map */
