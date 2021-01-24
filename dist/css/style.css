@@ -11,6 +11,7 @@ body {
   font-family: 'Barlow Semi Condensed', sans-serif;
   height: 100vh;
   color: #fff;
+  overflow-y: hidden;
 }
 
 header {
@@ -74,9 +75,9 @@ main {
 
 .main-menu {
   background-image: url("/dist/images/bg-triangle.svg");
-  background-position: center;
+  background-position: 50% 160%;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 15rem 15rem;
 }
 
 .top__row {
@@ -99,6 +100,7 @@ main {
   border-radius: 50%;
   border: 14px solid #5671f5;
   background-color: #fff;
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -116,6 +118,7 @@ main {
   border-radius: 50%;
   border: 14px solid #eca922;
   background-color: #fff;
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -137,6 +140,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 0.75rem;
 }
 
 .bot__row--rock {
@@ -145,6 +149,7 @@ main {
   border-radius: 50%;
   border: 14px solid #dd405d;
   background-color: #fff;
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -154,6 +159,47 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.rules-modal {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 5rem 1rem;
+  background: #e6e6e6;
+  z-index: 100;
+}
+
+.rules-modal__title {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #3b4363;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 5rem;
+}
+
+.rules-modal .rules-img {
+  width: 100%;
+  display: inline-block;
+}
+
+.rules-modal .close-btn {
+  width: 7%;
+  margin-top: 10rem;
+  margin-left: 10rem;
+  cursor: pointer;
+  display: inline-block;
 }
 
 .footer {
@@ -175,13 +221,15 @@ main {
 .rules__btn {
   height: 40px;
   width: 130px;
-  border-radius: 5px;
+  border-radius: 10px;
   color: #fff;
   background: transparent;
-  border: 1px solid #fff;
+  border: 1px solid #606e85;
   text-transform: uppercase;
   font-family: 'Barlow Semi Condensed', sans-serif;
   letter-spacing: 0.1rem;
   text-decoration: none;
+  outline: 0;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

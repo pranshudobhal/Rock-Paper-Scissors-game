@@ -10,6 +10,7 @@
   border-radius: 50%;
   border: 14px solid $color;
   background-color: $white;
+  cursor: pointer;
 }
 
 main {
@@ -19,14 +20,10 @@ main {
 
 .main-menu {
   background-image: url('/dist/images/bg-triangle.svg');
-  background-position: center;
+  background-position: 50% 160%;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 15rem 15rem;
 }
-
-// height of border 14px top bottom, bottom shadow space add 5px-6px
-// height of element 100px
-// width 100px
 
 .top__row {
   @include flex-center();
@@ -43,8 +40,42 @@ main {
 
 .bot__row {
   @include flex-center();
+  margin-top: 0.75rem;
   &--rock {
     @include button-style($rock-gradient-light);
     @include flex-center();
+  }
+}
+
+.rules-modal {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 5rem 1rem;
+  background: #e6e6e6;
+  z-index: 100;
+
+  &__title {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: $dark-text;
+    @include flex-center();
+    margin-bottom: 5rem;
+  }
+
+  .rules-img {
+    width: 100%;
+    display: inline-block;
+  }
+
+  .close-btn {
+    width: 7%;
+    margin-top: 10rem;
+    margin-left: 10rem;
+    cursor: pointer;
+    display: inline-block;
   }
 }

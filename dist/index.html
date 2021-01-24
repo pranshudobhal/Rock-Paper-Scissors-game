@@ -26,27 +26,37 @@
     <main>
       <div class="main-menu">
         <div class="top__row">
-          <div class="top__row--paper">
-            <img src="./images/icon-paper.svg" alt="Paper" />
+          <div class="top__row--paper" id="paper">
+            <img src="images/icon-paper.svg" alt="Paper" />
           </div>
-          <div class="top__row--scissors">
-            <img src="./images/icon-scissors.svg" alt="Scissors" />
+          <div class="top__row--scissors" id="scissors">
+            <img src="images/icon-scissors.svg" alt="Scissors" />
           </div>
         </div>
         <div class="bot__row">
-          <div class="bot__row--rock">
-            <img src="./images/icon-rock.svg" alt="Rock" />
+          <div class="bot__row--rock" id="rock">
+            <img src="images/icon-rock.svg" alt="Rock" />
           </div>
+        </div>
+      </div>
+      <div class="result-menu">
+        <!-- results menu to come here -->
+      </div>
+
+      <div class="footer">
+        <div class="rules">
+          <button class="rules__btn">Rules</button>
+        </div>
+        <div class="rules-modal">
+          <p class="rules-modal__title">rules</p>
+          <img class="rules-img" src="images/image-rules.svg" alt="game rules" />
+          <img class="close-btn" src="images/icon-close.svg" alt="close" />
         </div>
       </div>
     </main>
 
-    <footer class="footer">
-      <div class="rules">
-        <button class="rules__btn">Rules</button>
-      </div>
-    </footer>
-
     <!-- Score Rules You Picked The House Picked You Win You Lose Play Again -->
+
+    <script src="js/app.js"></script>
   </body>
 </html>
