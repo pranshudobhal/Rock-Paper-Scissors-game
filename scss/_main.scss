@@ -1,0 +1,50 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin button-style($color) {
+  height: 132px;
+  width: 132px;
+  border-radius: 50%;
+  border: 14px solid $color;
+  background-color: $white;
+}
+
+main {
+  margin: 0 auto;
+  margin-top: 3.5rem;
+}
+
+.main-menu {
+  background-image: url('/dist/images/bg-triangle.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+// height of border 14px top bottom, bottom shadow space add 5px-6px
+// height of element 100px
+// width 100px
+
+.top__row {
+  @include flex-center();
+  justify-content: space-around;
+  &--paper {
+    @include button-style($paper-gradient-light);
+    @include flex-center();
+  }
+  &--scissors {
+    @include button-style($scissors-gradient-light);
+    @include flex-center();
+  }
+}
+
+.bot__row {
+  @include flex-center();
+  &--rock {
+    @include button-style($rock-gradient-light);
+    @include flex-center();
+  }
+}

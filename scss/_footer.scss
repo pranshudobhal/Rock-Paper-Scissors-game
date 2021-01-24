@@ -1,0 +1,19 @@
+.footer {
+  margin-top: 6rem;
+}
+
+.rules {
+  @include flex-center();
+  &__btn {
+    height: 40px;
+    width: 130px;
+    border-radius: 5px;
+    color: $white;
+    background: transparent;
+    border: 1px solid $white;
+    text-transform: uppercase;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+  }
+}
