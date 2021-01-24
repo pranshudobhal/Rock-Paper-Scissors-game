@@ -63,7 +63,7 @@ main {
     text-transform: uppercase;
     color: $dark-text;
     @include flex-center();
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
   }
 
   .rules-img {
@@ -73,9 +73,11 @@ main {
 
   .close-btn {
     width: 7%;
-    margin-top: 10rem;
-    margin-left: 10rem;
     cursor: pointer;
-    display: inline-block;
+
+    &__contain {
+      @include flex-center();
+      margin-top: 6.5rem;
+    }
   }
 }
