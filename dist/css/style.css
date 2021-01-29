@@ -78,10 +78,9 @@ main {
   background-position: 50% 160%;
   background-repeat: no-repeat;
   background-size: 15rem 15rem;
-  display: none;
 }
 
-.main-menu .top__row {
+.top__row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -95,7 +94,7 @@ main {
       justify-content: space-around;
 }
 
-.main-menu .top__row--paper {
+.top__row--paper {
   height: 132px;
   width: 132px;
   border-radius: 50%;
@@ -113,7 +112,7 @@ main {
           align-items: center;
 }
 
-.main-menu .top__row--scissors {
+.top__row--scissors {
   height: 132px;
   width: 132px;
   border-radius: 50%;
@@ -131,7 +130,7 @@ main {
           align-items: center;
 }
 
-.main-menu .bot__row {
+.bot__row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -144,7 +143,7 @@ main {
   margin-top: 0.75rem;
 }
 
-.main-menu .bot__row--rock {
+.bot__row--rock {
   height: 132px;
   width: 132px;
   border-radius: 50%;
@@ -162,7 +161,11 @@ main {
           align-items: center;
 }
 
-.result-menu .top__row {
+.result-menu {
+  display: none;
+}
+
+.top__row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -176,7 +179,7 @@ main {
       justify-content: space-around;
 }
 
-.result-menu .top__row .user__answer {
+.user__answer {
   height: 132px;
   width: 132px;
   border-radius: 50%;
@@ -195,7 +198,7 @@ main {
           align-items: center;
 }
 
-.result-menu .top__row .computer__answer {
+.computer__answer {
   height: 132px;
   width: 132px;
   border-radius: 50%;
@@ -214,7 +217,7 @@ main {
           align-items: center;
 }
 
-.result-menu .medium__row {
+.medium__row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -230,7 +233,7 @@ main {
   padding-left: 1rem;
 }
 
-.result-menu .result {
+.result {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -246,7 +249,7 @@ main {
   font-weight: 700;
 }
 
-.result-menu .play__again {
+.play__again {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -259,7 +262,7 @@ main {
   margin-top: 1.5rem;
 }
 
-.result-menu .play__again--btn {
+.play__again--btn {
   font-size: 0.9rem;
   height: 45px;
   width: 220px;
