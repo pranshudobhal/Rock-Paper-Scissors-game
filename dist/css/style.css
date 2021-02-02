@@ -74,7 +74,7 @@ main {
 }
 
 .main-menu {
-  background-image: url("../images/bg-triangle.svg");
+  background-image: url("/images/bg-triangle.svg");
   background-position: 50% 160%;
   background-repeat: no-repeat;
   background-size: 15rem 15rem;
@@ -101,6 +101,8 @@ main {
   border: 14px solid #5671f5;
   background-color: #fff;
   cursor: pointer;
+  -webkit-box-shadow: inset 0 0.375em RGB(0 0 0/15%);
+          box-shadow: inset 0 0.375em RGB(0 0 0/15%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -119,6 +121,8 @@ main {
   border: 14px solid #eca922;
   background-color: #fff;
   cursor: pointer;
+  -webkit-box-shadow: inset 0 0.375em RGB(0 0 0/15%);
+          box-shadow: inset 0 0.375em RGB(0 0 0/15%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -150,6 +154,8 @@ main {
   border: 14px solid #dd405d;
   background-color: #fff;
   cursor: pointer;
+  -webkit-box-shadow: inset 0 0.375em RGB(0 0 0/15%);
+          box-shadow: inset 0 0.375em RGB(0 0 0/15%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -159,6 +165,13 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.paper-img,
+.rock-img,
+.scissors-img {
+  height: 60%;
+  width: 50%;
 }
 
 .result-menu {
@@ -186,6 +199,8 @@ main {
   border: 14px solid #141539;
   background-color: #fff;
   cursor: pointer;
+  -webkit-box-shadow: inset 0 0.375em RGB(0 0 0/15%);
+          box-shadow: inset 0 0.375em RGB(0 0 0/15%);
   background-color: #141539;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -205,6 +220,8 @@ main {
   border: 14px solid #141539;
   background-color: #fff;
   cursor: pointer;
+  -webkit-box-shadow: inset 0 0.375em RGB(0 0 0/15%);
+          box-shadow: inset 0 0.375em RGB(0 0 0/15%);
   background-color: #141539;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -279,7 +296,7 @@ main {
 }
 
 .bg-dark {
-  background-color: rgba(0, 0, 0, 0.3) !important;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .footer {
@@ -419,6 +436,93 @@ main {
     top: 0.15rem;
     right: 2rem;
     margin-top: 1.5rem;
+  }
+  .main-menu {
+    width: 60vw;
+    margin: 0px auto;
+    background-position: 50% 80%;
+  }
+  .top__row--paper {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    border: 14px solid #5671f5;
+    background-color: #fff;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 0.375em RGB(0 0 0/15%);
+            box-shadow: inset 0 0.375em RGB(0 0 0/15%);
+  }
+  .top__row--scissors {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    border: 14px solid #eca922;
+    background-color: #fff;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 0.375em RGB(0 0 0/15%);
+            box-shadow: inset 0 0.375em RGB(0 0 0/15%);
+  }
+  .bot__row--rock {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    border: 14px solid #dd405d;
+    background-color: #fff;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 0.375em RGB(0 0 0/15%);
+            box-shadow: inset 0 0.375em RGB(0 0 0/15%);
+  }
+  .user__answer {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    border: 14px solid #141539;
+    background-color: #fff;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 0.375em RGB(0 0 0/15%);
+            box-shadow: inset 0 0.375em RGB(0 0 0/15%);
+  }
+  .computer__answer {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    border: 14px solid #141539;
+    background-color: #fff;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 0.375em RGB(0 0 0/15%);
+            box-shadow: inset 0 0.375em RGB(0 0 0/15%);
+  }
+  .result-menu {
+    width: 80vw;
+    margin: 0 auto;
+  }
+  .result-menu .top__row {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .medium__row {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 75vw;
+    margin: 0 auto;
+    margin-top: 1rem;
+  }
+  .result {
+    position: absolute;
+    top: 12rem;
+    left: 18rem;
+    width: 12rem;
+    text-align: center;
+  }
+  .play__again {
+    position: absolute;
+    top: 20rem;
+    left: 19.5rem;
+  }
+  .play__again--btn {
+    width: 9rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

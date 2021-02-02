@@ -58,6 +58,68 @@
       }
     }
   }
+
+  .main-menu {
+    width: 60vw;
+    margin: 0px auto;
+    background-position: 50% 80%;
+  }
+
+  .top__row {
+    &--paper {
+      @include button-style($paper-gradient-light, 160, 160);
+    }
+    &--scissors {
+      @include button-style($scissors-gradient-light, 160, 160);
+    }
+  }
+
+  .bot__row {
+    &--rock {
+      @include button-style($rock-gradient-light, 160, 160);
+    }
+  }
+
+  .user__answer {
+    @include button-style($background-gradient-dark, 160, 160);
+  }
+
+  .computer__answer {
+    @include button-style($background-gradient-dark, 160, 160);
+  }
+
+  .result-menu {
+    width: 80vw;
+    margin: 0 auto;
+
+    .top__row {
+      justify-content: space-between;
+    }
+  }
+
+  .medium__row {
+    justify-content: space-between;
+    width: 75vw;
+    margin: 0 auto;
+    margin-top: 1rem;
+  }
+
+  .result {
+    position: absolute;
+    top: 12rem;
+    left: 18rem;
+    width: 12rem;
+    text-align: center;
+  }
+
+  .play__again {
+    position: absolute;
+    top: 20rem;
+    left: 19.5rem;
+    &--btn {
+      width: 9rem;
+    }
+  }
 }
 
 @include media-lg {
@@ -65,3 +127,18 @@
 
 @include media-xl {
 }
+
+// draw, lose, win
+// position: absolute;
+// top: 12rem;
+// left: 18rem;
+// width: 12rem;
+// text-align: center;
+
+// play again
+// position: absolute;
+//     top: 20rem;
+//     left: 19.5rem;
+
+// play again btn
+// width: 9rem;

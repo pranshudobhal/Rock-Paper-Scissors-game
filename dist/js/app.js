@@ -17,12 +17,10 @@ score.innerHTML = 0;
 //rules modal open and close buttons
 btnRules.addEventListener('click', function () {
   document.querySelector('.rules-modal').style.display = 'block';
-  document.body.classList.add('bg-dark');
 });
 
 btnRulesClose.addEventListener('click', function () {
   document.querySelector('.rules-modal').style.display = 'none';
-  document.body.classList.remove('bg-dark');
 });
 
 userAnswer.forEach((answer) => answer.addEventListener('click', optionSelected));
@@ -37,8 +35,8 @@ function resetToMain() {
   userDisplayOptionDiv.classList.add('user__answer');
   computerDisplayOptionDiv.className = '';
   computerDisplayOptionDiv.classList.add('computer__answer');
-  mainMenu.style.backgroundImage = "url('./images/bg-triangle.svg')";
-  // mainMenu.style.backgroundImage = "url('/images/bg-triangle.svg')";
+  // mainMenu.style.backgroundImage = "url('./images/bg-triangle.svg')";
+  mainMenu.style.backgroundImage = "url('/images/bg-triangle.svg')";
 }
 
 function optionSelected() {
@@ -97,6 +95,7 @@ function createUserOption(option, pos = 'top') {
   userDisplayOptionDiv.classList.remove(`${pos}__row`);
   userDisplayOptionDiv.classList.remove('user__answer');
   userDisplayOptionDiv.classList.add(`${pos}__row--${option}`);
+  userDisplayOption.classList.add(`${option}-img`);
 }
 
 //create computer selected option
@@ -106,4 +105,5 @@ function createComputerOption(option, pos = 'top') {
   computerDisplayOptionDiv.classList.remove(`${pos}__row`);
   computerDisplayOptionDiv.classList.remove('computer__answer');
   computerDisplayOptionDiv.classList.add(`${pos}__row--${option}`);
+  computerDisplayOption.classList.add(`${option}-img`);
 }
