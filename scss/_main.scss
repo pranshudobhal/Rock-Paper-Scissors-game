@@ -19,8 +19,8 @@ main {
 }
 
 .main-menu {
-  background-image: url('/images/bg-triangle.svg');
-  // background-image: url('../images/bg-triangle.svg');
+  // background-image: url('/images/bg-triangle.svg');
+  background-image: url('../images/bg-triangle.svg');
   background-position: 50% 160%;
   background-repeat: no-repeat;
   background-size: 15rem 15rem;
@@ -102,37 +102,6 @@ main {
   }
 }
 
-.rules-modal {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  padding: 5rem 1rem;
-  background: #e6e6e6;
-  z-index: 100;
-
-  &__title {
-    font-size: 2rem;
-    text-transform: uppercase;
-    color: $dark-text;
-    @include flex-center();
-    margin-bottom: 2rem;
-  }
-
-  .rules-img {
-    width: 100%;
-    display: inline-block;
-  }
-
-  .close-btn {
-    width: 7%;
-    cursor: pointer;
-
-    &__contain {
-      @include flex-center();
-      margin-top: 6.5rem;
-    }
-  }
+.bg-dark {
+  background-color: rgba(0, 0, 0, 0.3) !important;
 }
