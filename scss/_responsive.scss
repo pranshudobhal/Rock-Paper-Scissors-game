@@ -1,4 +1,8 @@
 @include media-md {
+  main {
+    margin-top: 4rem;
+  }
+
   header {
     width: 60vw;
   }
@@ -33,7 +37,7 @@
     margin-left: auto;
     margin-right: auto;
     width: 50vw;
-    height: 50vh;
+    height: 60vh;
     padding: 1rem;
 
     &__title {
@@ -44,7 +48,7 @@
     .rules-img {
       margin-left: auto;
       margin-right: auto;
-      width: 80%;
+      width: 75%;
       display: block;
     }
 
@@ -105,40 +109,170 @@
   }
 
   .result {
-    position: absolute;
-    top: 12rem;
-    left: 18rem;
-    width: 12rem;
-    text-align: center;
-  }
-
-  .play__again {
-    position: absolute;
-    top: 20rem;
-    left: 19.5rem;
-    &--btn {
-      width: 9rem;
-    }
+    margin-top: 2rem;
   }
 }
 
 @include media-lg {
+  header {
+    width: 50vw;
+  }
+
+  main {
+    margin-top: 3rem;
+  }
+
+  .main-menu {
+    width: 60vw;
+    background-position: 50% 75%;
+    background-size: 24rem 18rem;
+  }
+
+  .result-menu {
+    width: 70vw;
+  }
+
+  .result {
+    font-size: 3.5rem;
+  }
+
+  .medium__row {
+    width: 65vw;
+    font-size: 1.25rem;
+  }
+
+  .top__row {
+    &--paper {
+      @include button-style($paper-gradient-light, 190, 190);
+    }
+    &--scissors {
+      @include button-style($scissors-gradient-light, 190, 190);
+    }
+  }
+
+  .bot__row {
+    &--rock {
+      @include button-style($rock-gradient-light, 190, 190);
+    }
+  }
+
+  .user__answer {
+    @include button-style($background-gradient-dark, 190, 190);
+  }
+
+  .computer__answer {
+    @include button-style($background-gradient-dark, 190, 190);
+  }
+}
+
+@include media-xl-mod {
+  .rules-modal {
+    width: 50vw;
+  }
 }
 
 @include media-xl {
+  .main-menu {
+    width: 55vw;
+  }
+
+  main {
+    margin-top: 1rem;
+  }
+
+  .rules-modal {
+    height: 65vh;
+    width: 39vw;
+
+    .rules-img {
+      width: 70%;
+    }
+  }
+
+  .result-menu {
+    width: 60vw;
+  }
+
+  .medium__row {
+    width: 55vw;
+    margin-top: 2rem;
+  }
+
+  .result {
+    font-size: 4rem;
+  }
+
+  .footer {
+    margin-top: 3rem;
+  }
 }
 
-// draw, lose, win
-// position: absolute;
-// top: 12rem;
-// left: 18rem;
-// width: 12rem;
-// text-align: center;
+@include media-xxl {
+  header {
+    width: 40vw;
+  }
 
-// play again
-// position: absolute;
-//     top: 20rem;
-//     left: 19.5rem;
+  .main-menu {
+    width: 45vw;
+    background-position: 50% 65%;
+    background-size: 30rem 20rem;
+  }
 
-// play again btn
-// width: 9rem;
+  .top__row {
+    &--paper {
+      @include button-style($paper-gradient-light, 220, 220);
+    }
+    &--scissors {
+      @include button-style($scissors-gradient-light, 220, 220);
+    }
+  }
+
+  .bot__row {
+    &--rock {
+      @include button-style($rock-gradient-light, 220, 220);
+    }
+  }
+
+  .user__answer {
+    @include button-style($background-gradient-dark, 220, 220);
+  }
+
+  .computer__answer {
+    @include button-style($background-gradient-dark, 220, 220);
+  }
+
+  .medium__row {
+    font-size: 2rem;
+    width: 58vw;
+  }
+  .result {
+    font-size: 6rem;
+  }
+
+  .play__again--btn {
+    font-size: 1.2rem;
+    height: 65px;
+    width: 220px;
+  }
+
+  .rules-modal__title {
+    font-size: 3rem;
+    padding-left: 4rem;
+    padding-top: 0.5rem;
+  }
+
+  .rules-modal__title {
+    padding-top: 0.5rem;
+  }
+
+  .rules-modal .close-btn__contain {
+    top: 0.75rem;
+    right: 4rem;
+    width: 4%;
+  }
+
+  .rules__btn {
+    height: 55px;
+    width: 150px;
+  }
+}

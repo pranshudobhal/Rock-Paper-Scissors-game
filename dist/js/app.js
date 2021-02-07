@@ -14,15 +14,6 @@ const winnerText = document.querySelector('.result');
 var items = ['rock', 'paper', 'scissors'];
 score.innerHTML = 0;
 
-//rules modal open and close buttons
-btnRules.addEventListener('click', function () {
-  document.querySelector('.rules-modal').style.display = 'block';
-});
-
-btnRulesClose.addEventListener('click', function () {
-  document.querySelector('.rules-modal').style.display = 'none';
-});
-
 userAnswer.forEach((answer) => answer.addEventListener('click', optionSelected));
 
 playAgain.addEventListener('click', resetToMain);
@@ -35,8 +26,8 @@ function resetToMain() {
   userDisplayOptionDiv.classList.add('user__answer');
   computerDisplayOptionDiv.className = '';
   computerDisplayOptionDiv.classList.add('computer__answer');
-  // mainMenu.style.backgroundImage = "url('./images/bg-triangle.svg')";
-  mainMenu.style.backgroundImage = "url('/images/bg-triangle.svg')";
+  mainMenu.style.backgroundImage = "url('./images/bg-triangle.svg')";
+  // mainMenu.style.backgroundImage = "url('/images/bg-triangle.svg')";
 }
 
 function optionSelected() {
@@ -107,3 +98,19 @@ function createComputerOption(option, pos = 'top') {
   computerDisplayOptionDiv.classList.add(`${pos}__row--${option}`);
   computerDisplayOption.classList.add(`${option}-img`);
 }
+
+//rules modal open and close buttons
+btnRules.addEventListener('click', function () {
+  document.querySelector('.rules-modal').style.display = 'block';
+});
+
+btnRulesClose.addEventListener('click', function () {
+  document.querySelector('.rules-modal').style.display = 'none';
+});
+
+document.addEventListener('mouseup', function (e) {
+  var container = document.querySelector('.rules-modal');
+  if (!container.contains(e.target)) {
+    container.style.display = 'none';
+  }
+});
