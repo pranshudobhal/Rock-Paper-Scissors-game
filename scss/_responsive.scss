@@ -1,3 +1,47 @@
+@include media-sm {
+  header {
+    width: 60vw;
+  }
+
+  .main-menu {
+    width: 70vw;
+    margin: 0 auto;
+  }
+
+  .rules-modal {
+    border-radius: 10px;
+    top: 8rem;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 55vw;
+    height: 55vh;
+    padding: 1rem;
+
+    &__title {
+      justify-content: flex-start;
+      padding-left: 1rem;
+    }
+
+    .rules-img {
+      margin-left: auto;
+      margin-right: auto;
+      width: 90%;
+      display: block;
+    }
+
+    .close-btn {
+      width: 100%;
+      &__contain {
+        position: absolute;
+        top: 0.15rem;
+        right: 2rem;
+        margin-top: 1.5rem;
+      }
+    }
+  }
+}
+
 @include media-md {
   main {
     margin-top: 4rem;
@@ -31,35 +75,9 @@
   }
 
   .rules-modal {
-    border-radius: 10px;
-    top: 8rem;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50vw;
-    height: 60vh;
-    padding: 1rem;
-
     &__title {
       justify-content: flex-start;
       padding-left: 1rem;
-    }
-
-    .rules-img {
-      margin-left: auto;
-      margin-right: auto;
-      width: 75%;
-      display: block;
-    }
-
-    .close-btn {
-      width: 100%;
-      &__contain {
-        position: absolute;
-        top: 0.15rem;
-        right: 2rem;
-        margin-top: 1.5rem;
-      }
     }
   }
 
@@ -163,6 +181,10 @@
   .computer__answer {
     @include button-style($background-gradient-dark, 190, 190);
   }
+
+  .rules-modal {
+    width: 45vw;
+  }
 }
 
 @include media-xl-mod {
@@ -181,12 +203,7 @@
   }
 
   .rules-modal {
-    height: 65vh;
     width: 39vw;
-
-    .rules-img {
-      width: 70%;
-    }
   }
 
   .result-menu {
