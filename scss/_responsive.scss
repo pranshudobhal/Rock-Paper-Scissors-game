@@ -89,25 +89,25 @@
 
   .top__row {
     &--paper {
-      @include button-style($paper-gradient-light, 160, 160);
+      @include button-style($paper-gradient-light, 160, 160, hsl(230, 89%, 58%));
     }
     &--scissors {
-      @include button-style($scissors-gradient-light, 160, 160);
+      @include button-style($scissors-gradient-light, 160, 160, hsl(40, 84%, 40%));
     }
   }
 
   .bot__row {
     &--rock {
-      @include button-style($rock-gradient-light, 160, 160);
+      @include button-style($rock-gradient-light, 160, 160, hsl(349, 70%, 42%));
     }
   }
 
   .user__answer {
-    @include button-style($background-gradient-dark, 160, 160);
+    @include button-style($background-gradient-dark, 160, 160, hsl(349, 70%, 42%));
   }
 
   .computer__answer {
-    @include button-style($background-gradient-dark, 160, 160);
+    @include button-style($background-gradient-dark, 160, 160, hsl(349, 70%, 42%));
   }
 
   .result-menu {
@@ -161,25 +161,25 @@
 
   .top__row {
     &--paper {
-      @include button-style($paper-gradient-light, 190, 190);
+      @include button-style($paper-gradient-light, 190, 190, hsl(230, 89%, 58%));
     }
     &--scissors {
-      @include button-style($scissors-gradient-light, 190, 190);
+      @include button-style($scissors-gradient-light, 190, 190, hsl(40, 84%, 40%));
     }
   }
 
   .bot__row {
     &--rock {
-      @include button-style($rock-gradient-light, 190, 190);
+      @include button-style($rock-gradient-light, 190, 190, hsl(349, 70%, 42%));
     }
   }
 
   .user__answer {
-    @include button-style($background-gradient-dark, 190, 190);
+    @include button-style($background-gradient-dark, 190, 190, hsl(230, 89%, 58%));
   }
 
   .computer__answer {
-    @include button-style($background-gradient-dark, 190, 190);
+    @include button-style($background-gradient-dark, 190, 190, hsl(230, 89%, 58%));
   }
 
   .rules-modal {
@@ -237,25 +237,25 @@
 
   .top__row {
     &--paper {
-      @include button-style($paper-gradient-light, 220, 220);
+      @include button-style($paper-gradient-light, 220, 220, hsl(230, 89%, 58%));
     }
     &--scissors {
-      @include button-style($scissors-gradient-light, 220, 220);
+      @include button-style($scissors-gradient-light, 220, 220, hsl(40, 84%, 40%));
     }
   }
 
   .bot__row {
     &--rock {
-      @include button-style($rock-gradient-light, 220, 220);
+      @include button-style($rock-gradient-light, 220, 220, hsl(349, 70%, 42%));
     }
   }
 
   .user__answer {
-    @include button-style($background-gradient-dark, 220, 220);
+    @include button-style($background-gradient-dark, 220, 220, hsl(349, 70%, 42%));
   }
 
   .computer__answer {
-    @include button-style($background-gradient-dark, 220, 220);
+    @include button-style($background-gradient-dark, 220, 220, hsl(349, 70%, 42%));
   }
 
   .medium__row {

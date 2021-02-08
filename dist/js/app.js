@@ -42,16 +42,27 @@ function optionSelected() {
 
   if (userOption == 'rock') {
     createUserOption(userOption, 'bot');
+  } else {
+    createUserOption(userOption);
   }
-  createUserOption(userOption);
 
   if (computerOption == 'rock') {
     createComputerOption(computerOption, 'bot');
+  } else {
+    createComputerOption(computerOption);
   }
-  createComputerOption(computerOption);
 
   var winner = findWinner(userOption, computerOption);
   winnerText.innerHTML = winner;
+  addAnimation(winner);
+}
+
+function addAnimation(result) {
+  if (result == 'you win') {
+    userDisplayOptionDiv.classList.add('winner');
+  } else if (result == 'you lose') {
+    computerDisplayOptionDiv.classList.add('winner');
+  }
 }
 
 //check for winner
