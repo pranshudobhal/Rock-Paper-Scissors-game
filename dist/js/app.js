@@ -26,8 +26,8 @@ function resetToMain() {
   userDisplayOptionDiv.classList.add('user__answer');
   computerDisplayOptionDiv.className = '';
   computerDisplayOptionDiv.classList.add('computer__answer');
-  mainMenu.style.backgroundImage = "url('./images/bg-triangle.svg')";
-  // mainMenu.style.backgroundImage = "url('/images/bg-triangle.svg')";
+  // mainMenu.style.backgroundImage = "url('./images/bg-triangle.svg')";
+  mainMenu.style.backgroundImage = "url('/images/bg-triangle.svg')";
 }
 
 function optionSelected() {

@@ -75,6 +75,7 @@
   }
 
   .rules-modal {
+    width: 45vw;
     &__title {
       justify-content: flex-start;
       padding-left: 1rem;
@@ -183,13 +184,7 @@
   }
 
   .rules-modal {
-    width: 45vw;
-  }
-}
-
-@include media-xl-mod {
-  .rules-modal {
-    width: 50vw;
+    width: 40vw;
   }
 }
 
@@ -199,11 +194,11 @@
   }
 
   main {
-    margin-top: 1rem;
+    margin-top: 3rem;
   }
 
   .rules-modal {
-    width: 39vw;
+    width: 30vw;
   }
 
   .result-menu {
@@ -220,7 +215,13 @@
   }
 
   .footer {
-    margin-top: 3rem;
+    margin-top: 2rem;
+  }
+}
+
+@include media-xl-mod {
+  .rules-modal {
+    width: 27vw;
   }
 }
 

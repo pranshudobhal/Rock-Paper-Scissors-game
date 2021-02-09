@@ -74,7 +74,7 @@ main {
 }
 
 .main-menu {
-  background-image: url("../images/bg-triangle.svg");
+  background-image: url("/images/bg-triangle.svg");
   background-position: 50% 160%;
   background-repeat: no-repeat;
   background-size: 15rem 15rem;
@@ -302,32 +302,36 @@ main {
 
 @-webkit-keyframes winner-anim {
   0% {
-    -webkit-box-shadow: 0 0 0 3em rgba(255, 255, 255, 0.025), 0 0 0 4em rgba(255, 255, 255, 0.025), 0 0 0 5em rgba(255, 255, 255, 0.025);
-            box-shadow: 0 0 0 3em rgba(255, 255, 255, 0.025), 0 0 0 4em rgba(255, 255, 255, 0.025), 0 0 0 5em rgba(255, 255, 255, 0.025);
+    -webkit-box-shadow: 0 0 0 2em rgba(255, 255, 255, 0.025), 0 0 0 4em rgba(255, 255, 255, 0.025), 0 0 0 6em rgba(255, 255, 255, 0.025);
+            box-shadow: 0 0 0 2em rgba(255, 255, 255, 0.025), 0 0 0 4em rgba(255, 255, 255, 0.025), 0 0 0 6em rgba(255, 255, 255, 0.025);
   }
   50% {
-    -webkit-box-shadow: 0 0 0 3.5rem rgba(255, 255, 255, 0.025), 0 0 0 5.5rem rgba(255, 255, 255, 0.025), 0 0 0 7.5em rgba(255, 255, 255, 0.025);
-            box-shadow: 0 0 0 3.5rem rgba(255, 255, 255, 0.025), 0 0 0 5.5rem rgba(255, 255, 255, 0.025), 0 0 0 7.5em rgba(255, 255, 255, 0.025);
+    -webkit-box-shadow: 0 0 0 3.5rem rgba(255, 255, 255, 0.025), 0 0 0 6.5rem rgba(255, 255, 255, 0.025), 0 0 0 9.5em rgba(255, 255, 255, 0.025);
+            box-shadow: 0 0 0 3.5rem rgba(255, 255, 255, 0.025), 0 0 0 6.5rem rgba(255, 255, 255, 0.025), 0 0 0 9.5em rgba(255, 255, 255, 0.025);
   }
   to {
-    -webkit-box-shadow: 0 0 0 1rem rgba(255, 255, 255, 0.025), 0 0 0 2rem rgba(255, 255, 255, 0.025), 0 0 0 3em rgba(255, 255, 255, 0.025);
-            box-shadow: 0 0 0 1rem rgba(255, 255, 255, 0.025), 0 0 0 2rem rgba(255, 255, 255, 0.025), 0 0 0 3em rgba(255, 255, 255, 0.025);
+    -webkit-box-shadow: 0 0 0 2rem rgba(255, 255, 255, 0.025), 0 0 0 4rem rgba(255, 255, 255, 0.025), 0 0 0 6em rgba(255, 255, 255, 0.025);
+            box-shadow: 0 0 0 2rem rgba(255, 255, 255, 0.025), 0 0 0 4rem rgba(255, 255, 255, 0.025), 0 0 0 6em rgba(255, 255, 255, 0.025);
   }
 }
 
 @keyframes winner-anim {
   0% {
-    -webkit-box-shadow: 0 0 0 3em rgba(255, 255, 255, 0.025), 0 0 0 4em rgba(255, 255, 255, 0.025), 0 0 0 5em rgba(255, 255, 255, 0.025);
-            box-shadow: 0 0 0 3em rgba(255, 255, 255, 0.025), 0 0 0 4em rgba(255, 255, 255, 0.025), 0 0 0 5em rgba(255, 255, 255, 0.025);
+    -webkit-box-shadow: 0 0 0 2em rgba(255, 255, 255, 0.025), 0 0 0 4em rgba(255, 255, 255, 0.025), 0 0 0 6em rgba(255, 255, 255, 0.025);
+            box-shadow: 0 0 0 2em rgba(255, 255, 255, 0.025), 0 0 0 4em rgba(255, 255, 255, 0.025), 0 0 0 6em rgba(255, 255, 255, 0.025);
   }
   50% {
-    -webkit-box-shadow: 0 0 0 3.5rem rgba(255, 255, 255, 0.025), 0 0 0 5.5rem rgba(255, 255, 255, 0.025), 0 0 0 7.5em rgba(255, 255, 255, 0.025);
-            box-shadow: 0 0 0 3.5rem rgba(255, 255, 255, 0.025), 0 0 0 5.5rem rgba(255, 255, 255, 0.025), 0 0 0 7.5em rgba(255, 255, 255, 0.025);
+    -webkit-box-shadow: 0 0 0 3.5rem rgba(255, 255, 255, 0.025), 0 0 0 6.5rem rgba(255, 255, 255, 0.025), 0 0 0 9.5em rgba(255, 255, 255, 0.025);
+            box-shadow: 0 0 0 3.5rem rgba(255, 255, 255, 0.025), 0 0 0 6.5rem rgba(255, 255, 255, 0.025), 0 0 0 9.5em rgba(255, 255, 255, 0.025);
   }
   to {
-    -webkit-box-shadow: 0 0 0 1rem rgba(255, 255, 255, 0.025), 0 0 0 2rem rgba(255, 255, 255, 0.025), 0 0 0 3em rgba(255, 255, 255, 0.025);
-            box-shadow: 0 0 0 1rem rgba(255, 255, 255, 0.025), 0 0 0 2rem rgba(255, 255, 255, 0.025), 0 0 0 3em rgba(255, 255, 255, 0.025);
+    -webkit-box-shadow: 0 0 0 2rem rgba(255, 255, 255, 0.025), 0 0 0 4rem rgba(255, 255, 255, 0.025), 0 0 0 6em rgba(255, 255, 255, 0.025);
+            box-shadow: 0 0 0 2rem rgba(255, 255, 255, 0.025), 0 0 0 4rem rgba(255, 255, 255, 0.025), 0 0 0 6em rgba(255, 255, 255, 0.025);
   }
+}
+
+.animate__animated.animate__fadeIn {
+  --animate-duration: 3s;
 }
 
 .footer {
@@ -483,6 +487,9 @@ main {
         -ms-flex-pack: end;
             justify-content: flex-end;
     width: 95vw;
+  }
+  .rules-modal {
+    width: 45vw;
   }
   .rules-modal__title {
     -webkit-box-pack: start;
@@ -640,13 +647,7 @@ main {
             box-shadow: inset 0 0.45em RGB(0 0 0/15%), 0 0.5em #3554f3;
   }
   .rules-modal {
-    width: 45vw;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .rules-modal {
-    width: 50vw;
+    width: 40vw;
   }
 }
 
@@ -655,10 +656,10 @@ main {
     width: 55vw;
   }
   main {
-    margin-top: 1rem;
+    margin-top: 3rem;
   }
   .rules-modal {
-    width: 39vw;
+    width: 30vw;
   }
   .result-menu {
     width: 60vw;
@@ -671,7 +672,13 @@ main {
     font-size: 4rem;
   }
   .footer {
-    margin-top: 3rem;
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .rules-modal {
+    width: 27vw;
   }
 }
 

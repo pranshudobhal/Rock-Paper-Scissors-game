@@ -20,8 +20,8 @@ main {
 }
 
 .main-menu {
-  // background-image: url('/images/bg-triangle.svg');
-  background-image: url('../images/bg-triangle.svg');
+  background-image: url('/images/bg-triangle.svg');
+  // background-image: url('../images/bg-triangle.svg');
   background-position: 50% 160%;
   background-repeat: no-repeat;
   background-size: 15rem 15rem;
@@ -117,12 +117,16 @@ main {
 
 @keyframes winner-anim {
   0% {
-    box-shadow: 0 0 0 3em hsla(0, 0%, 100%, 0.025), 0 0 0 4em hsla(0, 0%, 100%, 0.025), 0 0 0 5em hsla(0, 0%, 100%, 0.025);
+    box-shadow: 0 0 0 2em hsla(0, 0%, 100%, 0.025), 0 0 0 4em hsla(0, 0%, 100%, 0.025), 0 0 0 6em hsla(0, 0%, 100%, 0.025);
   }
   50% {
-    box-shadow: 0 0 0 3.5rem hsla(0, 0%, 100%, 0.025), 0 0 0 5.5rem hsla(0, 0%, 100%, 0.025), 0 0 0 7.5em hsla(0, 0%, 100%, 0.025);
+    box-shadow: 0 0 0 3.5rem hsla(0, 0%, 100%, 0.025), 0 0 0 6.5rem hsla(0, 0%, 100%, 0.025), 0 0 0 9.5em hsla(0, 0%, 100%, 0.025);
   }
   to {
-    box-shadow: 0 0 0 1rem hsla(0, 0%, 100%, 0.025), 0 0 0 2rem hsla(0, 0%, 100%, 0.025), 0 0 0 3em hsla(0, 0%, 100%, 0.025);
+    box-shadow: 0 0 0 2rem hsla(0, 0%, 100%, 0.025), 0 0 0 4rem hsla(0, 0%, 100%, 0.025), 0 0 0 6em hsla(0, 0%, 100%, 0.025);
   }
+}
+
+.animate__animated.animate__fadeIn {
+  --animate-duration: 3s;
 }
