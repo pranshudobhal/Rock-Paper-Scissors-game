@@ -130,3 +130,16 @@ main {
 .animate__animated.animate__fadeIn {
   --animate-duration: 3s;
 }
+
+.bg-opacity {
+  position: absolute;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
