@@ -1,6 +1,5 @@
 const btnRules = document.querySelector('.rules__btn');
 const rulesModal = document.querySelector('.rules-modal');
-const bgOpacity = document.querySelector('.bg-opacity');
 const btnRulesClose = document.querySelector('.close-btn');
 const score = document.querySelector('.score__total');
 const userAnswer = document.querySelectorAll('.user-answer');
@@ -12,7 +11,6 @@ const mainMenu = document.querySelector('.main-menu');
 const resultMenu = document.querySelector('.result-menu');
 const playAgain = document.querySelector('.play__again');
 const winnerText = document.querySelector('.result');
-const header = document.querySelector('header');
 
 var items = ['rock', 'paper', 'scissors'];
 score.innerHTML = 0;
@@ -29,7 +27,6 @@ function resetToMain() {
   userDisplayOptionDiv.classList.add('user__answer');
   computerDisplayOptionDiv.className = '';
   computerDisplayOptionDiv.classList.add('computer__answer');
-  // mainMenu.style.backgroundImage = "url('./images/bg-triangle.svg')";
   mainMenu.style.backgroundImage = "url('/images/bg-triangle.svg')";
 }
 
@@ -116,20 +113,11 @@ function createComputerOption(option, pos = 'top') {
 //rules modal open and close buttons
 btnRules.addEventListener('click', function () {
   rulesModal.style.display = 'block';
-  bgOpacity.style.display = 'block';
   rulesModal.className = 'rules-modal animate__animated animate__fadeInBottomRight';
-  header.style.opacity = '0.3';
-  mainMenu.style.opacity = '0.3';
-  resultMenu.style.opacity = '0.3';
 });
 
 btnRulesClose.addEventListener('click', function () {
   rulesModal.className = 'rules-modal animate__animated animate__fadeOutBottomRight';
-  bgOpacity.style.display = 'none';
-  header.style.opacity = '1';
-  mainMenu.style.opacity = '1';
-  resultMenu.style.opacity = '1';
-
   setTimeout(function () {
     rulesModal.style.display = 'none';
   }, 2000);
@@ -138,10 +126,6 @@ btnRulesClose.addEventListener('click', function () {
 document.addEventListener('mouseup', function (e) {
   var container = document.querySelector('.rules-modal');
   if (!container.contains(e.target)) {
-    bgOpacity.style.display = 'none';
     container.style.display = 'none';
-    header.style.opacity = '1';
-    mainMenu.style.opacity = '1';
-    resultMenu.style.opacity = '1';
   }
 });
